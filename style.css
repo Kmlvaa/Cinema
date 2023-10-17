@@ -112,12 +112,19 @@
 .container .card {
   height: 600px;
 }
-.container .card .image {
-  height: 500px;
-  overflow: hidden;
+.container .card .inside-card .image img {
+  height: 400px;
 }
-.container .card .image :hover {
+.container .card :hover .image img {
   transform: scale(1.2);
+  cursor: pointer;
+}
+.container .card :hover .card-header {
+  background-color: #334E9E;
+}
+.container .card .image {
+  height: 400px;
+  overflow: hidden;
 }
 .container .card .image img {
   border-radius: 0;
@@ -130,9 +137,6 @@
   background-color: #F3F3F3;
   display: flex;
   justify-content: center;
-}
-.container .card .card-header :hover {
-  background-color: #334E9E;
 }
 .container .card .card-header a {
   text-decoration: none;
